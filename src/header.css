@@ -1,0 +1,28 @@
+.header { 
+    width: 100%;
+    background: #4582af;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 10px 0;
+
+}
+
+.header__wrapper {
+    min-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__wrapper__menu {
+    display: flex;
+}
+
+.header__wrapper__menu__element {
+    padding: 0 10px;
+}
+
+.header__wrapper__search-and-login {
+    display: flex;
+}
