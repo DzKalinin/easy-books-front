@@ -1,0 +1,123 @@
+.header {
+  width: 100%;
+  background: #4582af;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 20px 0;
+}
+
+.header__wrapper {
+  min-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__wrapper__menu {
+  display: flex;
+  user-select: none;
+}
+
+.header__wrapper__menu a {
+  color: white;
+}
+
+.header__wrapper__menu__element {
+  padding-right: 25px;
+}
+
+.header__wrapper__menu__element:hover a,
+.header__wrapper__search-and-login__search:hover,
+.header__wrapper__search-and-login__login:hover {
+  color: #c8cacb;
+  cursor: pointer;
+}
+
+.header__wrapper__menu__element:hover.drop-list:after {
+  border-top-color: #c8cacb;
+}
+
+.header__wrapper__menu__element.drop-list {
+  position: relative;
+  padding-right: 35px;
+}
+
+.header__wrapper__menu__element.drop-list:after {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  display: block;
+  content: "";
+  border: 5px solid transparent;
+  border-top: 5px solid white;
+}
+
+.header__wrapper__dropdown-menu {
+  display: none;
+  position: absolute;
+  color: black;
+  background: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  margin: 16px 0 0 0;
+}
+
+.header__wrapper__dropdown-menu:before {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  left: 0;
+  top: -20px;
+  display: block;
+  content: "";
+}
+
+.header__wrapper__dropdown-menu:after {
+  position: absolute;
+  left: 10px;
+  top: -10px;
+  display: block;
+  content: "";
+  border: 5px solid transparent;
+  border-bottom: 5px solid white;
+}
+
+.header__wrapper__dropdown-menu li {
+  width: 100%;
+  padding: 10px 40px;
+}
+
+.header__wrapper__dropdown-menu li:hover {
+  background: #e6f0fc;
+  cursor: pointer;
+}
+
+.header__wrapper__search-and-login {
+  display: flex;
+  user-select: none;
+}
+
+.header__wrapper__search-and-login__search,
+.header__wrapper__search-and-login__login {
+  padding-left: 25px;
+}
+
+.header__wrapper__search-and-login__search {
+  position: relative;
+}
+
+.header__wrapper__search-and-login__search__search-field {
+  display: none;
+  position: absolute;
+  top: -8px;
+  right: 25px;
+  width: 250px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  padding: 10px 0 10px 10px;
+}
+
+.show {
+  display: block;
+}
